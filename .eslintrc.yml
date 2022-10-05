@@ -1,0 +1,41 @@
+---
+parser: '@typescript-eslint/parser'
+parserOptions:
+  project: ./tsconfig.json
+  sourceType: module
+rules:
+  strict:
+    - error
+    - never
+  quotes:
+    - error
+    - single
+  dot-location:
+    - error
+    - property
+  space-before-function-paren:
+    - error
+    - anonymous: always
+      named: never
+      asyncArrow: always
+  function-paren-newline: 'off'
+  implicit-arrow-linebreak:
+    - error
+    - beside
+  arrow-spacing:
+    - error
+    - before: true
+      after: true
+  lines-between-class-members:
+    - error
+    - always
+    - exceptAfterSingleLine: true
+  no-unused-expressions: 'off'
+  no-new: 'off'
+  generator-star-spacing:
+    - error
+    - before: false
+      after: true
+  no-explicit-any: 'off'
+  multiline-comment-style: 'off'
+  no-unused-vars: 'off'
